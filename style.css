@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    width: 100%;
+}
+html {
+    scroll-behavior: smooth;
+}
+.navbar {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navleft {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.navleft img {
+    height: 90px;
+    margin-right: 20px;
+}
+.navleft h1 {
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    display: inline;
+}
+.navright ul {
+    display: flex;
+}
+.navright ul li {
+    list-style: none;
+    margin-left: 30px;
+}
+.navright ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    font-size: 23px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.navright ul li a:hover {
+    color: #a08758;
+}
+.nav-link.active {
+  color: #C2A878;
+  font-weight: bold;
+  border-bottom: 2px solid #C2A878;
+}
+
+.hero {
+    background: url(images/hero.jpg) no-repeat center/cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hero h1 {
+    font-size: 80px;
+    letter-spacing: 2px;
+    color: wheat;
+}
+.hero p {
+    font-size: 27px;
+    color: white;
+    letter-spacing: 2px;
+}
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10%;
+    gap: 2rem;
+    background-color: #F5F0E1;
+}
+.about img {
+    height: 600px;
+}
+.about h2 {
+    font-size: 45px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+.about p {
+    font-size: 19px;
+}
+.menu {
+    padding: 4rem 10%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.our h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    color: #2E2E2E;
+}
+.our p {
+    text-align: center;
+    font-size: 13px;
+}
+
+.menu-category {
+    margin-bottom: 3rem;
+    width: 50%;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.menu-category h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    width: 100%;
+    color: #C2A878;
+    border-bottom: 2px solid #C2A878;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.menu-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.menu-info h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #2E2E2E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-info span {
+    color: #C2A878;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.menu-info p {
+    margin: 0;
+    color: #444;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+.gallery {
+  padding: 4rem 10%;
+  background-color: #fdfbf7;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #2E2E2E;
+}
+
+.gallerycard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.gallerycard img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallerycard img:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+.reservations {
+  padding: 4rem 10%;
+  background-color: #fffaf5;
+  text-align: center;
+  background: url(images/hero.jpg) no-repeat center/cover;
+}
+
+.reservations h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #C2A878;
+}
+
+.reservations form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+.reservations input,
+.reservations button {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-family: inherit;
+}
+
+.reservations input:focus {
+  border-color: #C2A878;
+  box-shadow: 0 0 5px rgba(194, 168, 120, 0.4);
+}
+
+.reservations button {
+  background-color: #C2A878;
+  color: white;
+  font-weight: bold;
+  border: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.reservations button:hover {
+  background-color: #a88e65;
+}
+.contact {
+  padding: 4rem 10%;
+  background-color: #fdfbf7;
+  text-align: center;
+  color: #2E2E2E;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #2E2E2E;
+}
+
+.contact p {
+  font-size: 1rem;
+  margin: 0.3rem 0;
+  color: #444;
+}
+
+footer {
+  background-color: #C2A878;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 10%;
+  font-size: 0.95rem;
+  margin-top: 0;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 1000vw;
+    width: 320px;
+    z-index: 999;
+    background-color: whitesmoke;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.hamburger {
+  display: none;
+}
+.hamburger img {
+    margin-top: 7px;
+    height: 80px;
+    width: 50px;
+}
+.close {
+  position: relative;
+  left: 230px;
+  margin-top: 10px;
+}
+.close img {
+  height: 50px;
+}
+@media (max-width: 1024px) {
+  html,
+  body {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    overflow: hidden;
+  }
+  .hero {
+    width: 100%;
+    height: 500px;
+  }
+  .hero h1 {
+    font-size: 33px;
+    text-align: center;
+  }
+  .hero p {
+    font-size: 13px;
+    text-align: center;
+  }
+  .navbar {
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navleft h1 {
+    font-size: 18px;
+  }
+  .navleft img {
+    height: 60px;
+    margin-left: 10px;
+  }
+  .nav-link{
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .hamburger img {
+    height: 80px;
+    margin-left: -90px;
+  }
+  .about {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 5%;
+  }
+
+  .about img {
+    height: auto;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .about h2 {
+    font-size: 30px;
+  }
+
+  .about p {
+    font-size: 16px;
+  }
+  .our h2 {
+    font-size: 29px;
+  }
+  .our p {
+    font-size: 12px;
+  }
+  .menu {
+    flex-direction: column;
+    padding: 2rem 5%;
+  }
+
+  .menu-category {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .menu-item img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+  }
+
+  .menu-info h4 {
+    flex-direction: column;
+    font-size: 1rem;
+  }
+
+  .gallerycard {
+    grid-template-columns: 1fr;
+  }
+
+  .reservations {
+    padding: 2rem 10%;
+  }
+
+  .reservations h2 {
+    font-size: 1.8rem;
+  }
+  .reservations input {
+    padding: 12px;
+  }
+  .reservations form {
+    width: 100%;
+  }
+
+  .contact {
+    padding: 2rem 5%;
+  }
+
+  .contact h2 {
+    font-size: 1.8rem;
+  }
+
+  .contact p {
+    font-size: 0.9rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 1rem 5%;
+  }
+  .navright ul li a:hover {
+    color: inherit;
+  }
+
+  .menu-item img:hover {
+    transform: none;
+    cursor: default;
+  }
+
+  .gallerycard img:hover {
+    transform: none;
+    cursor: default;
+  }
+}
+@media  (max-width: 320px) {
+  .navbar {
+    width: 100%;
+  }
+  .navleft img {
+    height: 50px;
+  }
+  .navleft h1 {
+    font-size: 16px;
+  }
+  .hamburger img {
+    margin-left: -120px;
+  }
+}

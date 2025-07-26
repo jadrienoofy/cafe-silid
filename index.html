@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <script src="index.js"></script>
+    <title>Café Sílid</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navleft">
+            <a href="index.html"><img src="images/logo.png" alt="Café Sílid"></a>
+            <h1>Café Sílid</h1>
+        </div>
+        <div class="navright">
+            <ul class="sidebar" style="display: none;">
+                <li class="close" onclick="closeSidebar()"><a href="#"><img src="assets/close.svg"></a></li>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#menu">menu</a></li>
+                <li><a href="#specials">specials</a></li>
+                <li><a href="#gallery">gallery</a></li>
+                <li><a href="#reservations">reservations</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+            <ul>
+                <li><a href="#home" class="nav-link">home</a></li>
+                <li><a href="#about" class="nav-link">about</a></li>
+                <li><a href="#menu" class="nav-link">menu</a></li>
+                <li><a href="#specials" class="nav-link">specials</a></li>
+                <li><a href="#gallery" class="nav-link">gallery</a></li>
+                <li><a href="#reservations" class="nav-link">reservations</a></li>
+                <li><a href="#contact" class="nav-link">contact</a></li>
+                <li class="hamburger" onclick="showSidebar()"><a href="#"><img src="assets/hamburger.svg" ></a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="hero" id="home">
+        <h1>Welcome to Café Sílid</h1>
+        <p>Where Comfort meets craft in every cup and plate</p>
+    </section>
+    <section class="about" id="about">
+        <div class="left">
+            <h2>About Us</h2>
+            <p>Café Sílid was built on the idea of turning everyday cravings into crafted experiences. 
+                Inspired by Filipino comfort and modern aesthetics, we serve memories with every sip.</p>
+        </div>
+        <div class="right">
+            <img src="images/about.png" alt="Interior">
+        </div>
+    </section>
+    <div class="our">
+        <h2>Our Menu</h2>
+        <p>Note: This is a sample menu created for design and academic purposes only. Dishes, names, descriptions, and prices are fictional and intended for front-end development practice.</p>
+    </div>
+    <section class="menu" id="menu">
+
+    <div class="menu-category">
+        <h3>Appetizers</h3>
+        <div class="menu-item">
+        <img src="images/cheese.jpg" alt="Cheese Lumpia Rolls">
+        <div class="menu-info">
+            <h4>Cheese Lumpia Rolls <span>₱150</span></h4>
+            <p>Crispy wonton wrapper filled with creamy kesong puti and herbs.</p>
+        </div>
+        </div>
+        <div class="menu-item">
+        <img src="images/nacho.webp" alt="Silid Nachos">
+        <div class="menu-info">
+            <h4>Silid Nachos <span>₱180</span></h4>
+            <p>Homemade kamote chips topped with pork adobo bits and garlic aioli.</p>
+        </div>
+        
+        </div>
+        <div class="menu-item">
+        <img src="images/tinapa.jpg" alt="Tinapa Croquettes">
+        <div class="menu-info">
+            <h4>Tinapa Croquettes <span>₱170</span></h4>
+            <p>Smoked fish and potato croquettes.</p>
+        </div>
+        </div>
+    </div>
+    <div class="menu-category">
+        <h3>Mains</h3>
+
+        <div class="menu-item">
+        <img src="images/adobo.jpg" alt="Adobo Blanc">
+        <div class="menu-info">
+            <h4>Adobo Blanc <span>₱280</span></h4>
+            <p>Slow-cooked chicken in garlic white cream sauce served with rice.</p>
+        </div>
+        </div>
+        <div class="menu-item">
+        <img src="images/siniga.jpg" alt="Sinigang Rice Bowl">
+        <div class="menu-info">
+            <h4>Sinigang Rice Bowl <span>₱290</span></h4>
+            <p>Pork belly with tamarind glaze.</p>
+        </div>
+        </div>
+
+        <div class="menu-item">
+        <img src="images/tap.webp" alt="Café Sílid Tapa">
+        <div class="menu-info">
+            <h4>Café Sílid Tapa <span>₱260</span></h4>
+            <p>Tender beef tapa with egg, garlic rice, and pickled papaya.</p>
+        </div>
+        </div>
+    </div>
+    </section>
+    <section class="gallery" id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallerycard">
+            <img src="images/gal.jpg" alt="Interior">
+            <img src="images/gal2.jpg" alt="Interior">
+            <img src="images/gal3.webp" alt="Interior">
+            <img src="images/gal4.webp" alt="Interior">
+        </div>
+        <div class="gallerycard">
+            <img src="images/gal5.jpg" alt="Interior">
+            <img src="images/gal6.jpg" alt="Interior">
+            <img src="images/gal7.png" alt="Interior">
+            <img src="images/gal8.jpg" alt="Interior">
+        </div>
+    </section>
+    <section class="reservations" id="reservations">
+  <h2>Reservations</h2>
+  <form>
+    <input type="text" placeholder="Name">
+    <input type="email" placeholder="Email">
+    <input type="date">
+    <input type="time">
+    <input type="number" placeholder="Party Size">
+    <button type="submit">Book Now</button>
+  </form>
+</section>
+    <section class="contact" id="contact">
+  <h2>Contact Us</h2>
+  <p>123 Café Lane, Tandang Sora, Quezon City</p>
+  <p>Phone: 0917 123 4567</p>
+  <p>Email: contact@cafesilid.ph</p>
+</section>
+
+<footer>
+  <p>© 2025 Café Sílid – Brewed in memory, served with soul.</p>
+</footer>
+
+</body>
+</html>
