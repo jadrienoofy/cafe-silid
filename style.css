@@ -323,7 +323,7 @@ footer {
   html,
   body {
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
   }
   .hero {
     width: 100%;
